@@ -12,6 +12,8 @@
     display: flex;
     list-style: none;
     padding-left: 0;
+    text-decoration: underline;
+    color: rebeccapurple;
 }
 
 .nav-link-item {
