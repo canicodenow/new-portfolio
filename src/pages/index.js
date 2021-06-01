@@ -9,7 +9,7 @@ const IndexPage = () => {
     <Layout pageTitle="Home Page">
       <p>I'm making this by following the Gatsby Tutorial.</p>
       <StaticImage className="rounded-2xl shadow-lg my-3"
-        alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
+        alt="Joe Bryan, of Fulham Football Club, celebrating with Harrison Reed and Aleksandar Mitrovic"
         src="../images/Wembley.webp"
       />
     </Layout>
