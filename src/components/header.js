@@ -6,13 +6,13 @@ import {
 } from './layout.module.css'
 import Logo from "../images/PT-logo-2.png"
 
-const Header = ({ pageTitle }) => {
+const Header = () => {
 
     return (
 
-<header className="mb-3 md:mb-5 lg:mb-7 border-b-2 border-blue-200 fixed w-full z-50 bg-white">
+<header className="mb-3 md:mb-5 lg:mb-7 border-b-2 border-teal-700 fixed w-full z-50 bg-white">
 <nav className="flex shadow-lg pb-3 px-3 md:px-6 lg:px-8">
-<Link to="/">
+    <Link to="/">
     <img loading="eager"
         alt="PoorTrader logo"
         src={ Logo }
