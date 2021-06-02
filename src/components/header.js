@@ -16,11 +16,9 @@ const Header = ({ pageTitle }) => {
     <img loading="eager"
         alt="PoorTrader logo"
         src={ Logo }
-        height="150"
         width="200"
     ></img>
     </Link>
-    <title>{pageTitle}</title>
     <ul className="nav-links ml-auto mr-3">
         <li className="pl-8 self-center">
             <Link to="/" className={navLinkText}>Home</Link></li>

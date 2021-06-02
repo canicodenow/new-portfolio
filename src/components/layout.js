@@ -6,6 +6,7 @@ const Layout = ({ pageTitle, children }) => {
         <div>
         <Header/>
         <main className="container mx-auto px-6 md:px-8 lg:px-28 pt-32">
+        <title>{pageTitle}</title>
             <h1>{pageTitle}</h1>
             {children}
         </main>
