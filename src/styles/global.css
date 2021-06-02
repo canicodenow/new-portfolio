@@ -9,7 +9,8 @@
     }
 
     h1,h2,h3,h4,h5,h6 {
-        @apply font-medium py-3;
+        @apply font-semibold py-3 text-teal-700;
+        font-family: "Rubik";
     }
 
     h1 {
@@ -32,8 +33,8 @@
         @apply pb-3;
     }
 
-    p ul {
-        @apply list-outside list-disc space-y-1 pt-3 ml-10 mb-2;
+    ul:not(.nav-links) {
+        @apply list-outside list-disc space-y-1 ml-10 mb-2;
     }
 }
 
@@ -43,10 +44,20 @@
     }
 }
 
+body {
+    font-family: "Nunito";
+    @apply md:text-lg;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
     padding-left: 0;
     text-decoration: underline;
     color: rebeccapurple;
+}
+
+nav .data-gatsby-image-wrapper {
+    transition: none !important;
+    transform: none !important;
 }
