@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import './src/styles/Global.css';
 import '@fontsource/rubik';
 import '@fontsource/nunito';
