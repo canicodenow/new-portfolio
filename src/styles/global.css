@@ -30,7 +30,7 @@
     }
 
     [aria-current="page"] {
-        @apply underline text-teal-700;
+        text-decoration: underline color: teal;
     }
 
     nav ul {
