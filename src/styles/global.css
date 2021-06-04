@@ -29,12 +29,28 @@
         @apply pt-2;
     }
 
+    .active {
+        @apply underline text-teal-700;
+    }
+
+    nav ul {
+        @apply ml-auto mr-3;
+    }
+
+    nav ul li {
+        @apply ml-4 md:ml-8 self-center text-black transform hover:-rotate-6 no-underline focus:-rotate-6 md:text-lg lg:text-xl hover:underline hover:text-teal-700;
+    }
+
     p {
         @apply pb-3;
     }
 
     ul:not(.nav-links) {
         @apply list-outside list-disc space-y-1 ml-10 mb-2;
+    }
+
+    ol {
+        @apply list-decimal space-y-1 ml-10;
     }
 }
 
@@ -51,10 +67,9 @@ body {
 
 .nav-links {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
     padding-left: 0;
-    text-decoration: underline;
-    color: rebeccapurple;
 }
 
 nav .data-gatsby-image-wrapper {

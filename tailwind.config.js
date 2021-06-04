@@ -1,4 +1,4 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
 
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}'],
@@ -20,9 +20,11 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      rotate: ['focus'],
+      fontSize: ['hover', 'focus'],
+      position: ['hover', 'focus'],
+    },
   },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
-}
+  plugins: [require('@tailwindcss/typography')],
+};

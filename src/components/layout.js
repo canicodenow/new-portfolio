@@ -1,17 +1,20 @@
-import * as React from 'react'
-import Header from "./header.js"
+import * as React from 'react';
+import { Helmet } from 'react-helmet';
+import Footer from './Footer.js';
+import Header from './Header.js';
 
-const Layout = ({ pageTitle, children }) => {
-    return (
-        <div>
-        <Header/>
-        <main className="container mx-auto px-6 md:px-8 lg:px-28 pt-32">
+const Layout = ({ pageTitle, children }) => (
+  <div>
+    <Header />
+    <main className="container mx-auto px-6 md:px-8 lg:px-28 lg:pt-32 md:pt-28 pt-20">
+      <Helmet>
         <title>{pageTitle}</title>
-            <h1>{pageTitle}</h1>
-            {children}
-        </main>
-        </div>
-    )
-}
+      </Helmet>
+      <h1>{pageTitle}</h1>
+      {children}
+    </main>
+    <Footer />
+  </div>
+);
 
-export default Layout
+export default Layout;
