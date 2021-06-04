@@ -7,7 +7,7 @@ import Logo from '../images/PT-logo-2.png';
 export default function Nav() {
   return (
     <nav className="flex shadow-lg pb-3 px-3 md:px-6 lg:px-8">
-      <Link activeClassName="active" to="/">
+      <Link to="/">
         <img
           loading="eager"
           alt="PoorTrader logo"
@@ -18,24 +18,16 @@ export default function Nav() {
       </Link>
       <ul className="nav-links">
         <li>
-          <Link to="/about" activeClassName="active">
-            About
-          </Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/blog" activeClassName="active">
-            Blog
-          </Link>
+          <Link to="/blog">Blog</Link>
         </li>
         <li>
-          <Link to="/rules" activeClassName="active">
-            Rules
-          </Link>
+          <Link to="/rules">Rules</Link>
         </li>
         <li>
-          <Link to="/resources" activeClassName="active">
-            Resources
-          </Link>
+          <Link to="/resources">Resources</Link>
         </li>
       </ul>
     </nav>
