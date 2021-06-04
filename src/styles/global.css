@@ -30,7 +30,8 @@
     }
 
     [aria-current="page"] {
-        text-decoration: underline color: teal;
+        text-decoration: underline;
+        color: teal;
     }
 
     nav ul {
