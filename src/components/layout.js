@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet';
 import Footer from './Footer.js';
-import Header from './Header.js';
+import Header from './header.js';
 
 const Layout = ({ pageTitle, children }) => (
   <div>
